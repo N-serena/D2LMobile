@@ -4,6 +4,8 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.example.d2lmobile.R
+import com.example.d2lmobile.activities.DashboardActivity
+import com.example.d2lmobile.activities.LoginActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
