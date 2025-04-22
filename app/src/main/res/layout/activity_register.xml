@@ -1,15 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText android:id="@+id/full_name" ... />
-    <EditText android:id="@+id/email" ... />
-    <EditText android:id="@+id/student_id" ... />
-    <EditText android:id="@+id/password" ... />
-    <EditText android:id="@+id/confirm_password" ... />
-    <Button android:id="@+id/btn_register" android:text="REGISTER" />
-    <Button android:id="@+id/btn_back_to_login" android:text="Back to Login" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:gravity="center">
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/student_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student ID"
+            android:inputType="number"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/btn_back_to_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to Login"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>

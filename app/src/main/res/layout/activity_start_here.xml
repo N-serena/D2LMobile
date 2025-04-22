@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Here"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome" />
+
+    <Button
+        android:id="@+id/btn_syllabus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Syllabus"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btn_lab_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lab Report Instruction"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btn_project_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Project Instruction"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
