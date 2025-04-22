@@ -1,20 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="24dp"
         android:orientation="vertical"
-        android:gravity="center">
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1E50FF"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="16dp" />
 
         <EditText
-            android:id="@+id/full_name"
+            android:id="@+id/first_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Full Name" />
+            android:hint="First Name"
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
 
         <EditText
             android:id="@+id/email"
@@ -22,15 +46,9 @@
             android:layout_height="wrap_content"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:layout_marginTop="12dp" />
-
-        <EditText
-            android:id="@+id/student_id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Student ID"
-            android:inputType="number"
-            android:layout_marginTop="12dp" />
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
 
         <EditText
             android:id="@+id/password"
@@ -38,7 +56,9 @@
             android:layout_height="wrap_content"
             android:hint="Password"
             android:inputType="textPassword"
-            android:layout_marginTop="12dp" />
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
 
         <EditText
             android:id="@+id/confirm_password"
@@ -46,20 +66,36 @@
             android:layout_height="wrap_content"
             android:hint="Confirm Password"
             android:inputType="textPassword"
-            android:layout_marginTop="12dp" />
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
 
         <Button
             android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="REGISTER"
-            android:layout_marginTop="20dp" />
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#1E50FF"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
 
-        <Button
+        <TextView
             android:id="@+id/btn_back_to_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Back to Login"
-            android:layout_marginTop="8dp" />
+            android:text="Already have an account? Login"
+            android:textColor="#1E50FF"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By creating or logging into an account you are agreeing with our Terms and Conditions and Privacy Statement"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:layout_marginBottom="20dp" />
     </LinearLayout>
 </ScrollView>
