@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">D2lMobile</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="log_in">LOG IN</string>
+    <string name="register">Register</string>
+</resources>
