@@ -5,12 +5,12 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.d2lmobile.R
 
-class SlidesActivity : AppCompatActivity() {
+class LabActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_slides)
+        setContentView(R.layout.activity_lab)
 
         val moduleNumber = intent.getIntExtra("MODULE_NUMBER", 1)
-        findViewById<TextView>(R.id.slides_text).text = "Slides for Module $moduleNumber"
+        findViewById<TextView>(R.id.lab_text).text = "Lab for Module $moduleNumber"
     }
 }
