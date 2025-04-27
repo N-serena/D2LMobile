@@ -1,35 +1,28 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingTop="48dp"
+    android:background="@android:color/white">
 
     <LinearLayout
-        android:orientation="vertical"
+        android:id="@+id/module_list_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:padding="24dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Learning Modules"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_marginBottom="16dp" />
+            android:textColor="#000"
+            android:layout_marginBottom="24dp" />
 
-        <!-- Buttons for each module -->
-        <Button android:id="@+id/btn_module1" android:text="Module 1"  android:layout_height="3.px" android:layout_width="3.0px"/>
-        <Button android:id="@+id/btn_module2" android:text="Module 2" android:layout_height="3.px" android:layout_width="3.0px"/>
-        <Button android:id="@+id/btn_module3" android:text="Module 3" android:layout_height="3.px" android:layout_width="3.0px"/>
-        <Button android:id="@+id/btn_module4" android:text="Module 4" android:layout_height="3.px" android:layout_width="3.0px"/>
-        <Button android:id="@+id/btn_module5" android:text="Module 5" android:layout_height="3.px" android:layout_width="3.0px"/>
-        <Button android:id="@+id/btn_module6" android:text="Module 6" android:layout_height="3.px" android:layout_width="3.0px"/>
-        <Button android:id="@+id/btn_module7" android:text="Module 7" android:layout_height="3.px" android:layout_width="3.0px"/>
-        <Button android:id="@+id/btn_module8" android:text="Module 8" android:layout_height="3.px" android:layout_width="3.0px"/>
-        <Button android:id="@+id/btn_module9" android:text="Module 9" android:layout_height="3.px" android:layout_width="3.0px"/>
-        <Button android:id="@+id/btn_module10" android:text="Module 10" android:layout_height="3.px" android:layout_width="3.0px"/>
-        <Button android:id="@+id/btn_module11" android:text="Module 11" android:layout_height="3.px" android:layout_width="3.0px"/>
-        <Button android:id="@+id/btn_module12" android:text="Module 12" android:layout_height="3.px" android:layout_width="3.0px"/>
-        <Button android:id="@+id/btn_module13" android:text="Module 13" android:layout_height="3.px" android:layout_width="3.0px"/>
+        <!-- Firebase will add buttons here dynamically -->
 
     </LinearLayout>
 </ScrollView>

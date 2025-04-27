@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +16,12 @@
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.DashboardActivity" />
         <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.StartHereActivity" />
+        <activity android:name=".activities.LearningModulesActivity" />
+        <activity android:name=".activities.ResourcesActivity" />
+        <activity android:name=".activities.ModuleDetailActivity" />
+
+
 
 
         <activity
@@ -30,5 +37,6 @@
         </activity>
 
     </application>
+
 
 </manifest>

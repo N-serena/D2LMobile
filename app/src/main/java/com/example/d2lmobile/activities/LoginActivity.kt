@@ -16,9 +16,16 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
 
         auth = FirebaseAuth.getInstance()
+
+//        if (auth.currentUser != null) {
+//            // User already logged in -> skip login
+//            startActivity(Intent(this, DashboardActivity::class.java))
+//            finish()
+//            return
+//        }
+        setContentView(R.layout.activity_login)
 
         val emailField = findViewById<EditText>(R.id.et_email)
         val passwordField = findViewById<EditText>(R.id.et_password)

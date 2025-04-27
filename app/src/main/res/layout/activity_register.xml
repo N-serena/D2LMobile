@@ -2,100 +2,106 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:padding="24dp"
+    android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp"
         android:gravity="center_horizontal">
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:textSize="26sp"
+            android:text="Create Account"
+            android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="#1E50FF"
-            android:layout_marginBottom="24dp"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp" />
 
         <EditText
             android:id="@+id/first_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="First Name"
-            android:background="@android:drawable/editbox_background"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp" />
+            android:background="@drawable/rounded_edittext"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/last_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Last Name"
-            android:background="@android:drawable/editbox_background"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp" />
+            android:background="@drawable/rounded_edittext"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:background="@android:drawable/editbox_background"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp" />
+            android:hint="Email Address"
+            android:background="@drawable/rounded_edittext"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:inputType="textPassword"
-            android:background="@android:drawable/editbox_background"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp" />
+            android:background="@drawable/rounded_edittext"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPassword" />
 
         <EditText
             android:id="@+id/confirm_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Confirm Password"
-            android:inputType="textPassword"
-            android:background="@android:drawable/editbox_background"
-            android:padding="12dp"
-            android:layout_marginBottom="20dp" />
+            android:background="@drawable/rounded_edittext"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sign Up"
+            android:textSize="16sp"
             android:textColor="@android:color/white"
             android:backgroundTint="#1E50FF"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="16dp"
+            android:padding="16dp" />
 
         <TextView
             android:id="@+id/btn_back_to_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already have an account? Login"
+            android:text="Already have an account? Log in"
             android:textColor="#1E50FF"
             android:textStyle="bold"
+            android:layout_marginTop="8dp"
             android:layout_marginBottom="24dp" />
 
         <TextView
             android:id="@+id/disclaimer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="By creating or logging into an account you are agreeing with our Terms and Conditions and Privacy Statement"
+            android:text="By creating an account, you agree to our Terms &amp; Conditions and Privacy Policy."
             android:textAlignment="center"
             android:textSize="12sp"
+            android:textColor="#888888"
             android:layout_marginBottom="20dp" />
     </LinearLayout>
 </ScrollView>
