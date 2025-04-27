@@ -1,9 +1,10 @@
+package com.example.d2lmobile
+
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import com.example.d2lmobile.R
 import com.example.d2lmobile.activities.DashboardActivity
 import com.example.d2lmobile.activities.LoginActivity
 

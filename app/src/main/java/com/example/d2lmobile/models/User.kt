@@ -1,4 +1,8 @@
 package com.example.d2lmobile.models
 
-class User {
-}
+data class User(
+    val firstName: String = "",
+    val lastName: String = "",
+    val email: String = "",
+    val password: String = ""
+)
